@@ -28,15 +28,11 @@ public class Robot_cam extends Agent {
 	    
 	    public void performBehavior() {
 	        if (collisionDetected()) {
-	            // stop the robot
-	        	
+
 	        	rotateY(180);
-//	        	while(storeTime < 10000){
-//	            	setColor(new Color3f(255,0,0));
+
 	            setTranslationalVelocity(velocity);         
 	            setRotationalVelocity(rotation);
-//	                storeTime++;
-//	        	}
 
 	        } else {
 	        	
