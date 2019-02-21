@@ -10,6 +10,7 @@ import simbad.sim.*;
 import simbad.sim.Box;
 import simbad.sim.EnvironmentDescription;
 import simbad.sim.Wall;
+//import simbas.sim.CherryAgent;
 
 public class Environment extends EnvironmentDescription{
 	
@@ -84,7 +85,7 @@ public class Environment extends EnvironmentDescription{
         
         
         //Cherries
-        for(int n = 0; n<10; n ++){
+        /*for(int n = 0; n<10; n ++){
         	int x = (int) (Math.random() * ( 7 + 7)) -7;
         	int y = (int) (Math.random() * ( 7 + 7)) -7;
         	
@@ -96,7 +97,7 @@ public class Environment extends EnvironmentDescription{
         	int y = (int) (Math.random() * ( 7 + 7)) -7;
         	
         	add(new CherryAgent(new Vector3d(x, 0, y), "cherry", 0.3f));
-        }
+        }*/
         
         
        
