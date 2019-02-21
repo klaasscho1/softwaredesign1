@@ -13,8 +13,7 @@ public class Robot_bumper extends Agent {
     
 	private double velocity = 0.5;
 	private double rotation = 0;
-	//used to store the current life time of the agent
-	//private double storeTime = 0.0;
+	
 	RangeSensorBelt bumper;
 	CameraSensor camera;
 	LampActuator lamp;
@@ -33,6 +32,8 @@ public class Robot_bumper extends Agent {
     	lamp.setBlink(false);
     }
     
+    //Function responsible of changing the lamp state and
+    // printing the bumper sensor that was hit
     public void bump(){
     	boolean fix = lamp.getOn();
     	if (fix) {
@@ -44,7 +45,7 @@ public class Robot_bumper extends Agent {
     	}
       	if(getCounter() % 20 == 0) {
 			for(int i = 0; i < bumper.getNumSensors(); i++) {
-				//double range = bumper.getMeasurement(i);
+				
 				boolean hit = bumper.hasHit(i);
 				if(hit){
 					System.out.println("Bumper : " + i + " bumped!");
@@ -56,18 +57,11 @@ public class Robot_bumper extends Agent {
     
     public void performBehavior() {
         if (collisionDetected()) {
-            // stop the robot
-        	
-        	
         	bump();
+		//The robot rotates 180º
         	rotateY(180);
-        
-//        	while(storeTime < 10000){
-//            	setColor(new Color3f(255,0,0));
-            setTranslationalVelocity(velocity);         
-            setRotationalVelocity(rotation);
-//                storeTime++;
-//        	}
+        	setTranslationalVelocity(velocity);         
+            	setRotationalVelocity(rotation);
 
         } else {
         	
