@@ -11,15 +11,13 @@ public class Main {
 		System.setProperty("j3d.implicitAntialiasing", "true");
 		
 		EnvironmentDescription environment = new Environment();
-		
-		//Robot robot1 = new Robot(new Vector3d(0, 0, 0),"robot1");
-		Robot_bumper bumper = new Robot_bumper(new Vector3d(0,0,6), "robot_bumper");
+	
 		Robot_cam camera = new Robot_cam(new Vector3d(2,0,3), "camera");
+		Robot_bumper bumper = new Robot_bumper(new Vector3d(0,0,6), "robot_bumper");
 		
 		
-		//environment.add(robot1);
-		environment.add(bumper);
 		environment.add(camera);
+		environment.add(bumper);
 	
 		
 		Simbad frame = new Simbad(environment, false);
