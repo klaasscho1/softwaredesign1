@@ -10,7 +10,9 @@ import simbad.sim.*;
 import simbad.sim.Box;
 import simbad.sim.EnvironmentDescription;
 import simbad.sim.Wall;
-import simbad.sim.CherryAgent;
+
+//import simbad.sim.BallAgent;
+
 
 public class Environment extends EnvironmentDescription{
 	
@@ -20,6 +22,10 @@ public class Environment extends EnvironmentDescription{
 		// turn on the lights
         this.light1IsOn = true;
         this.light2IsOn = true;
+        
+        // enable the physics engine in order to have better physics effects on the objects
+        //this.setUsePhysics(true);
+        
         
         // show the axes so that we know where things are
         this.showAxis(true);
@@ -56,7 +62,6 @@ public class Environment extends EnvironmentDescription{
         add(b2);
         
         
-      
         Arch a1 = new Arch(new Vector3d(3, 0, -3), this);
         a1.rotate90(1);
         add(a1);
@@ -79,16 +84,7 @@ public class Environment extends EnvironmentDescription{
         
         light1Color = white;
         light2Color = white;
-        
-        
-        // Add cherries in random places throughout the world
-        int noOfCherries = 30;
-        for(int i = 0; i < noOfCherries; i++){
-        	// Generate random coordinates
-            double x = (Math.random() * 25 - 13);
-            double z = (Math.random() * 25 - 13);
-            // Create and add cherry in random spot
-            add(new CherryAgent(new Vector3d(x, 0, z), "cherry", 0.15f));
-        }
+       
+		
 	}
 };

@@ -10,23 +10,22 @@ public class Robot_cam extends Agent {
 
 	private double velocity = 0.5;
 	private double rotation = 0;
-	//used to store the current life time of the agent
-	//private double storeTime = 0.0;
+
 	CameraSensor camera;
+	
 	
 	
 	public Robot_cam (Vector3d position, String name) {     
         super(position,name);
-        camera = RobotFactory.addCameraSensor(this);
+        camera = RobotFactory.addCameraSensor(this); 
+        setCanBeTraversed(false);
     }
-	
-	public void initBehavior() {
-		setTranslationalVelocity(0.5);
-	}
+	 public void initBehavior() {}
 	    
 	    public void performBehavior() {
+	
 	        if (collisionDetected()) {
-
+	
 	        	rotateY(180);
 
 	            setTranslationalVelocity(velocity);         
@@ -42,8 +41,13 @@ public class Robot_cam extends Agent {
 	            // frequently change orientation 
 	            if ((getCounter() % 100)==0) 
 	               setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
+	            
+	            
 	        }
 	    }
+	    
 }
+
+
 
 
