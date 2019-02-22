@@ -11,29 +11,23 @@ import simbad.sim.EnvironmentDescription;
 
 import simbad.sim.SimpleAgent;
 
-/**
- * This demo show a robot picking cherries. When touched, the cherries are either removed or repaint.
- */
 public class Robot_picker extends Demo {
-    /** The robot used in the demo.*/
+   
 	private double velocity = 0.5;
 	private double rotation = 0;
 	private int noOfCherries = 30;
+	
     public class Robot extends Agent {
       
-        
         public Robot(Vector3d position, String name) {
-            super(position, name);
+        super(position, name);
          
         }
 
-        /** Initialize Agent's Behavior */
         public void initBehavior() {
             setTranslationalVelocity(0.5);
         }
 
-      
-        /** Perform one step of Agent's Behavior */
         public void performBehavior() {
             if (collisionDetected()){
             	rotateY(180);
@@ -43,18 +37,22 @@ public class Robot_picker extends Demo {
             }else{
             	 // progress at 0.5 m/s
                 setTranslationalVelocity(velocity);
-                // frequently change orientation 
+                
+		//If all cherries are collected, go back to star position and stay there
                 if (noOfCherries == 0){
                 	moveToStartPosition();
                 	setRotationalVelocity(0);
                 	setTranslationalVelocity(0);
                 	System.out.print("All the cherries have been picked!");
                 }
+		    
+		// frequently change orientation 
                 if ((getCounter() % 100)==0) 
                    setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
+		    
+		//If there is another agent and it is a cherry, pick it
                 if (anOtherAgentIsVeryNear()){
                     SimpleAgent agent = getVeryNearAgent();
-                    
                     if (agent instanceof CherryAgent){
                         // detach it from the scene graph so it is no more visible.
                     	noOfCherries -= 1;
@@ -67,10 +65,11 @@ public class Robot_picker extends Demo {
             }
         }
     }
-
+   
+    //Class responsibe of the creation of the robot and cherries
     public  Robot_picker(Vector3d position, String name, EnvironmentDescription environment) {
 		
-		// add the robot
+	// add the robot
     	Robot picker = new Robot(position, name);
     	picker.setColor(new Color3f(255,0,0));
         environment.add(picker);
