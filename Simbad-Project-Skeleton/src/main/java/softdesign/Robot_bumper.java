@@ -23,12 +23,14 @@ public class Robot_bumper extends Agent {
         super(position,name);
         bumper = RobotFactory.addBumperBeltSensor(this, 10);
         lamp = RobotFactory.addLamp(this);
+        setCanBeTraversed(false);
+       
+        
     }
     
     public void initBehavior() {
     	lamp.setOn(true);
     	lamp.setBlink(false);
-    	setTranslationalVelocity(0.5);
     }
     
     //Function responsible of changing the lamp state and
@@ -56,14 +58,15 @@ public class Robot_bumper extends Agent {
     
     public void performBehavior() {
         if (collisionDetected()) {
-        	System.out.println("Bump!");
         	bump();
-		//The robot rotates 180ยบ
+		//The robot rotates 180บ
         	rotateY(180);
         	setTranslationalVelocity(velocity);         
             	setRotationalVelocity(rotation);
 
         } else {
+        	
+        	
         	setColor(new Color3f(0,255,0));
         	
             // progress at 0.5 m/s
