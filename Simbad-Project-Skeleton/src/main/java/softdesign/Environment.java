@@ -10,7 +10,7 @@ import simbad.sim.*;
 import simbad.sim.Box;
 import simbad.sim.EnvironmentDescription;
 import simbad.sim.Wall;
-//import simbas.sim.CherryAgent;
+import simbad.sim.CherryAgent;
 
 public class Environment extends EnvironmentDescription{
 	
