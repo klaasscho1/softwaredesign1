@@ -84,26 +84,14 @@ public class Environment extends EnvironmentDescription{
         light2Color = white;
         
         
-        //Cherries
-        /*for(int n = 0; n<10; n ++){
-        	int x = (int) (Math.random() * ( 7 + 7)) -7;
-        	int y = (int) (Math.random() * ( 7 + 7)) -7;
-        	
-        	add(new CherryAgent(new Vector3d(x, 0, y), "cherry", 0.4f));
+        // Add cherries in random places throughout the world
+        int noOfCherries = 30;
+        for(int i = 0; i < noOfCherries; i++){
+        	// Generate random coordinates
+            double x = (Math.random() * 25 - 13);
+            double z = (Math.random() * 25 - 13);
+            // Create and add cherry in random spot
+            add(new CherryAgent(new Vector3d(x, 0, z), "cherry", 0.15f));
         }
-        
-        for(int n = 0; n<10; n ++){
-        	int x = (int) (Math.random() * ( 7 + 7)) -7;
-        	int y = (int) (Math.random() * ( 7 + 7)) -7;
-        	
-        	add(new CherryAgent(new Vector3d(x, 0, y), "cherry", 0.3f));
-        }*/
-        
-        
-       
-        
-        
-        
-		
 	}
 };
