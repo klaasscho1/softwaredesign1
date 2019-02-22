@@ -18,6 +18,7 @@ public class Robot_picker extends Demo {
     /** The robot used in the demo.*/
 	private double velocity = 0.5;
 	private double rotation = 0;
+	private int noOfCherries = 30;
     public class Robot extends Agent {
       
         
@@ -43,6 +44,12 @@ public class Robot_picker extends Demo {
             	 // progress at 0.5 m/s
                 setTranslationalVelocity(velocity);
                 // frequently change orientation 
+                if (noOfCherries == 0){
+                	moveToStartPosition();
+                	setRotationalVelocity(0);
+                	setTranslationalVelocity(0);
+                	System.out.print("All the cherries have been picked!");
+                }
                 if ((getCounter() % 100)==0) 
                    setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
                 if (anOtherAgentIsVeryNear()){
@@ -50,8 +57,9 @@ public class Robot_picker extends Demo {
                     
                     if (agent instanceof CherryAgent){
                         // detach it from the scene graph so it is no more visible.
+                    	noOfCherries -= 1;
                         agent.detach();
-                        System.out.println("cherry picked !");
+                        System.out.println("Cherry picked !");
                     }
                     
                 
@@ -68,10 +76,10 @@ public class Robot_picker extends Demo {
         environment.add(picker);
         
         // add cherries randomly 
-        int noOfCherries = 80;
+        
         for( int n =0; n < noOfCherries;n++){
-            double x =( Math.random()*25 - 13);
-            double z = (Math.random()*25 - 13);
+            double x =( Math.random()*20 - 10);
+            double z = (Math.random()*20 - 10);
             environment.add(new CherryAgent(new Vector3d(x, 0, z), "cherry", 0.3f));
         }
     }
