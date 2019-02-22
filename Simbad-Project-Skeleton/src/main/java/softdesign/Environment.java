@@ -84,18 +84,7 @@ public class Environment extends EnvironmentDescription{
         
         light1Color = white;
         light2Color = white;
-        
-        
-        //Cherries
-        
-
-        
-        
-        
        
-        
-        
-        
 		
 	}
 };
