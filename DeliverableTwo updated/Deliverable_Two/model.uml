@@ -3,6 +3,9 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="__yWYoEDQEemxjqtFBMVPtg">
     <importedPackage xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
   </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_uHl5MEDzEema0ugE7PJ60A">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_bf_WoEDMEem0oKCEpqBCSw" name="ClassDiagram">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_mdeX4EDMEem0oKCEpqBCSw">
       <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
@@ -173,9 +176,6 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmJUDMEem0oKCEpqBCSw" name="x" type="_mdjQYEDMEem0oKCEpqBCSw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmJkDMEem0oKCEpqBCSw" name="y" type="_mdjQYEDMEem0oKCEpqBCSw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmJ0DMEem0oKCEpqBCSw" name="z" type="_mdjQYEDMEem0oKCEpqBCSw"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmKEDMEem0oKCEpqBCSw" name="robot_bumper" type="_mdfmAUDMEem0oKCEpqBCSw" association="_mdg0JEDMEem0oKCEpqBCSw"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmKUDMEem0oKCEpqBCSw" name="robot_camera" type="_mdfmK0DMEem0oKCEpqBCSw" association="_mdhbMEDMEem0oKCEpqBCSw"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmKkDMEem0oKCEpqBCSw" name="robot_picker" type="_mdfmFEDMEem0oKCEpqBCSw" association="_mdhbNEDMEem0oKCEpqBCSw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mdfmK0DMEem0oKCEpqBCSw" name="Robot_Camera">
         <generalization xmi:type="uml:Generalization" xmi:id="_mdfmLEDMEem0oKCEpqBCSw" general="_mdfmHUDMEem0oKCEpqBCSw"/>
@@ -207,18 +207,21 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdg0JkDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_mdg0J0DMEem0oKCEpqBCSw" name="coordinate" type="_mdfmJEDMEem0oKCEpqBCSw" association="_mdg0JEDMEem0oKCEpqBCSw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mdfmKEDMEem0oKCEpqBCSw" name="robot_bumper" type="_mdfmAUDMEem0oKCEpqBCSw" association="_mdg0JEDMEem0oKCEpqBCSw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mdhbMEDMEem0oKCEpqBCSw" memberEnd="_mdfmKUDMEem0oKCEpqBCSw _mdhbM0DMEem0oKCEpqBCSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdhbMUDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdhbMkDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_mdhbM0DMEem0oKCEpqBCSw" name="coordinate" type="_mdfmJEDMEem0oKCEpqBCSw" association="_mdhbMEDMEem0oKCEpqBCSw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mdfmKUDMEem0oKCEpqBCSw" name="robot_camera" type="_mdfmK0DMEem0oKCEpqBCSw" association="_mdhbMEDMEem0oKCEpqBCSw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mdhbNEDMEem0oKCEpqBCSw" memberEnd="_mdfmKkDMEem0oKCEpqBCSw _mdhbN0DMEem0oKCEpqBCSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdhbNUDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdhbNkDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_mdhbN0DMEem0oKCEpqBCSw" name="coordinate" type="_mdfmJEDMEem0oKCEpqBCSw" association="_mdhbNEDMEem0oKCEpqBCSw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mdfmKkDMEem0oKCEpqBCSw" name="robot_picker" type="_mdfmFEDMEem0oKCEpqBCSw" association="_mdhbNEDMEem0oKCEpqBCSw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_mdiCQEDMEem0oKCEpqBCSw" name="PrimitiveTypes" URI="http://www.omg.org/spec/PrimitiveTypes/20131001">
       <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCQUDMEem0oKCEpqBCSw" name="Boolean">
