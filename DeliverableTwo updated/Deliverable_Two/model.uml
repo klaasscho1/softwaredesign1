@@ -186,6 +186,8 @@
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmMUDMEem0oKCEpqBCSw" name="position" type="_mdfmJEDMEem0oKCEpqBCSw"/>
         </ownedOperation>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FC9qsEGiEemmos1wpWSOeg" name="CherryStation"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IzKl4EGiEemmos1wpWSOeg" name="CentralStation"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mdgNEEDMEem0oKCEpqBCSw" memberEnd="_mdfmEEDMEem0oKCEpqBCSw _mdgNE0DMEem0oKCEpqBCSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdgNEUDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
