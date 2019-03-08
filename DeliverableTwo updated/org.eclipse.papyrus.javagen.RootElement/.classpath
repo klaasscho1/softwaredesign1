@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/j3dcore.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/j3dutils.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/jogamp-fat-test.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/jogamp-fat.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/jogl-all.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/simbad-1.4.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/vecmath.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/Simbad-Project-Skeleton/lib/gluegen.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
