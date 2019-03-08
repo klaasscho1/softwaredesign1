@@ -16,15 +16,15 @@ public class Coordinate {
 	/**
 	 * 
 	 */
-	public RootElement.ClassDiagram.Integer x;
+	public int x ;
 	/**
 	 * 
 	 */
-	public RootElement.ClassDiagram.Integer y;
+	public int y;
 	/**
 	 * 
 	 */
-	public RootElement.ClassDiagram.Integer z;
+	public int z;
 	/**
 	 * 
 	 */

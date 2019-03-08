@@ -3,7 +3,10 @@
 // --------------------------------------------------------
 
 package RootElement.ClassDiagram.Package1;
+import javax.vecmath.Color3f;
+import javax.vecmath.Vector3d;
 
+import  simbad.sim.*;
 import RootElement.ClassDiagram.Package1.Coordinate;
 import RootElement.ClassDiagram.Package1.Robot;
 
@@ -11,10 +14,19 @@ import RootElement.ClassDiagram.Package1.Robot;
 /**
  * 
  */
-public class Robot_Camera extends Robot {
+public class Robot_Camera extends Agent {
 	/**
 	 * 
 	 */
+	private double velocity = 0.5;
+	private double rotation = 0;
+
+	CameraSensor camera;
+	public Robot_Camera (Vector3d position, String name) {     
+        super(position,name);
+        camera = RobotFactory.addCameraSensor(this); 
+        setCanBeTraversed(false);
+    }
 	public void initBehavior() {
 	}
 
@@ -22,13 +34,26 @@ public class Robot_Camera extends Robot {
 	 * 
 	 */
 	public void performBehavior() {
-	}
+		
+        if (collisionDetected()) {
 
-	/**
-	 * 
-	 * @param name 
-	 * @param position 
-	 */
-	public void Robot_Camera(RootElement.ClassDiagram.String name, Coordinate position) {
-	}
+        	rotateY(180);
+
+            setTranslationalVelocity(velocity);         
+            setRotationalVelocity(rotation);
+
+        } else {
+        	
+        	setColor(new Color3f(0,0,0));
+        	
+            // progress at 0.5 m/s
+            setTranslationalVelocity(velocity);
+            
+            // frequently change orientation 
+            if ((getCounter() % 100)==0) 
+               setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
+            
+            
+        }
+    }
 };
