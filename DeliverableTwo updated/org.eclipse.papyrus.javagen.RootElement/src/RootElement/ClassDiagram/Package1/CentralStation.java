@@ -1,7 +1,10 @@
 package RootElement.ClassDiagram.Package1;
-
 import javax.vecmath.Vector3d;
 import  simbad.sim.*;
+
+import java.util.List;
+import java.util.Map;
+
 import javax.vecmath.Color3f;
 import javax.vecmath.Point3d;
 import javax.vecmath.Vector3d;

@@ -13,35 +13,20 @@ import javax.vecmath.Vector3d;
 import  simbad.sim.*;
 
 public class Robot extends Agent {
-	/**
-	 * 
-	 */
+	
 	private double velocity = 0.5;
-	/**
-	 * 
-	 */
 	private double rotation = 0;
-	/**
-	 * 
-	 */
+	
 	//used to store the current life time of the agent
-		private double storeTime = 0.0;
-	/**
-	 * 
-	 */
+	private double storeTime = 0.0;
+	
 	public Robot (Vector3d position, String name) {     
         super(position,name);
     }
 
-	/**
-	 * 
-	 */
 	public void initBehavior() {
 	}
 
-	/**
-	 * 
-	 */
 	public void performBehavior() {
 		if (collisionDetected()) {
             // stop the robot

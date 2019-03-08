@@ -4,14 +4,6 @@
 
 package RootElement.ClassDiagram.Package1;
 
-
-
-//import RootElement.ClassDiagram.Package1.Environment;
-//import RootElement.ClassDiagram.Package1.Robot;
-//import main.java.softdesign.Robot_bumper;
-//import main.java.softdesign.Robot_cam;
-//import main.java.softdesign.Robot_picker;
-
 import javax.vecmath.Vector3d;
 import simbad.gui.Simbad;
 import simbad.sim.EnvironmentDescription;
