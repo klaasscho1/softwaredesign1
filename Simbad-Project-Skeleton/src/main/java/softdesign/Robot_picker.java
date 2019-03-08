@@ -15,7 +15,7 @@ public class Robot_picker extends Robot {
 	CherryMission mission;
 	
     //Class responsible of the creation of the robot and cherries
-    public Robot_picker(Vector3d position, String name , CherryMission newMission, EnvironmentDescription environment) {
+    public Robot_picker(Vector3d position, String name , CherryMission newMission) {
     	// add the robot
     	super(position, name);
     	setColor(new Color3f(255,0,0));

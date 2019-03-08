@@ -1,4 +1,7 @@
 package main.java.softdesign;
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.vecmath.Vector3d;
 
 import simbad.gui.Simbad;
@@ -12,11 +15,14 @@ public class Main {
 			CentralStation central = new CentralStation();
 			System.setProperty("j3d.implicitAntialiasing", "true");
 			EnvironmentDescription environment = new Environment();
-		
-			central.createCamera(environment,new Vector3d(2,0,3) ,"camera");
-			central.createBumper(environment,new Vector3d(0,0,6) ,"bumper");
-			central.createPicker(environment,new Vector3d(1,0,5) ,"picker");
-			central.initializeMission(20, environment);
+			
+			Map<String, ARobotFactory> robots = new HashMap<String, ARobotFactory>() {{
+		        put("bumper", new BumperRobotFactory());
+		        put("camera", new CameraRobotFactory());
+		        put("picker", new PickerRobotFactory());
+		    }};
+					
+			central.initializeRobots(environment, robots);
 			
 			Simbad frame = new Simbad(environment, false);
 	      	frame.update(frame.getGraphics()); 
