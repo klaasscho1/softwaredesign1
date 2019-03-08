@@ -1,8 +1,6 @@
 package main.java.softdesign;
 
 import  simbad.sim.*;
-
-
 import javax.vecmath.Color3f;
 import javax.vecmath.Vector3d;
 import simbad.sim.RangeSensorBelt;
@@ -59,7 +57,7 @@ public class Robot_bumper extends Agent {
     public void performBehavior() {
         if (collisionDetected()) {
         	bump();
-		//The robot rotates 180º
+		//The robot rotates 180ï¿½
         	rotateY(180);
         	setTranslationalVelocity(velocity);         
             	setRotationalVelocity(rotation);
