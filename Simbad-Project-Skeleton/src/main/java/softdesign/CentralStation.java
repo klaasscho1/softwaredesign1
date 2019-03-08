@@ -36,7 +36,7 @@ public class CentralStation {
 	//creates a robot that will pick cherries if it encounters them
 	public void createPicker(EnvironmentDescription environment, Vector3d position, String name){
 		numberOfRobots++;
-		picker = new Robot_picker(position,name,mission,environment);
+		environment.add(picker = new Robot_picker(position, name, mission, environment));
 	}
 	
 	//gets the number of robots currently in the system

@@ -11,67 +11,44 @@ import simbad.sim.EnvironmentDescription;
 
 import simbad.sim.SimpleAgent;
 
-public class Robot_picker extends Demo {
-   
-	private double velocity = 0.5;
-	private double rotation = 0;
+public class Robot_picker extends Robot {
 	CherryMission mission;
 	
-    //Class responsibe of the creation of the robot and cherries
-    public  Robot_picker(Vector3d position, String name , CherryMission newMission, EnvironmentDescription environment) {
-    	
+    //Class responsible of the creation of the robot and cherries
+    public Robot_picker(Vector3d position, String name , CherryMission newMission, EnvironmentDescription environment) {
     	// add the robot
-    	Robot picker = new Robot(position, name);
-    	picker.setColor(new Color3f(255,0,0));
+    	super(position, name);
+    	setColor(new Color3f(255,0,0));
     	mission = newMission;
-    	environment.add(picker);
-        
     }
 	
-    public class Robot extends Agent {
-      
-        public Robot(Vector3d position, String name) {
-        super(position, name);
-         
-        }
+    public void initBehavior() {
+    	super.initBehavior();
+        setTranslationalVelocity(0.5);
+    }
 
-        public void initBehavior() {
-            setTranslationalVelocity(0.5);
-        }
-
-        public void performBehavior() {
-            if (collisionDetected()){
-            	rotateY(180);
-            	setTranslationalVelocity(velocity);         
-            	setRotationalVelocity(rotation);
-            	
-            }else{
-            	 // progress at 0.5 m/s
-                setTranslationalVelocity(velocity);
-                
-                //If all cherries are collected, go back to star position and stay there
-                if (mission.missionStatus()){
-                	moveToStartPosition();
-                	setRotationalVelocity(0);
-                	setTranslationalVelocity(0);
+    public void performBehavior() {
+    	super.performBehavior();
+        if (!collisionDetected()){
+            
+            //If all cherries are collected, go back to star position and stay there
+            if (mission.missionStatus()){
+            	moveToStartPosition();
+            	setRotationalVelocity(0);
+            	setTranslationalVelocity(0);
+            }
+	    
+            //If there is another agent and it is a cherry, pick it
+            if (anOtherAgentIsVeryNear()){
+                SimpleAgent agent = getVeryNearAgent();
+                if (agent instanceof CherryAgent){
+                    // detach it from the scene graph so it is no more visible.
+                	mission.cherryPicked();
+                    agent.detach();
                 }
-		    
-                // frequently change orientation 
-                if ((getCounter() % 100)==0) 
-                   setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
-		    
-                //If there is another agent and it is a cherry, pick it
-                if (anOtherAgentIsVeryNear()){
-                    SimpleAgent agent = getVeryNearAgent();
-                    if (agent instanceof CherryAgent){
-                        // detach it from the scene graph so it is no more visible.
-                    	mission.cherryPicked();
-                        agent.detach();
-                    }
-                    
                 
-            }
-            }
+            
+        }
         }
     }
    

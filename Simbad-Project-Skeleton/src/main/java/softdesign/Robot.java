@@ -7,10 +7,10 @@ import javax.vecmath.Vector3d;
 
 public class Robot extends Agent {
     
-	private double velocity = 0.5;
-	private double rotation = 0;
+	public double velocity = 0.5;
+	public double rotation = 0;
 	//used to store the current life time of the agent
-	private double storeTime = 0.0;
+	public double storeTime = 0.0;
 	
 	public Robot (Vector3d position, String name) {     
         super(position,name);
@@ -31,8 +31,6 @@ public class Robot extends Agent {
 //        	}
 
         } else {
-        	
-        	setColor(new Color3f(0,255,0));
         	
             // progress at 0.5 m/s
             setTranslationalVelocity(velocity);

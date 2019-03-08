@@ -6,12 +6,7 @@ import javax.vecmath.Vector3d;
 import simbad.sim.RangeSensorBelt;
 import simbad.sim.LampActuator;
 
-
-public class Robot_bumper extends Agent {
-    
-	private double velocity = 0.5;
-	private double rotation = 0;
-	
+public class Robot_bumper extends Robot {
 	RangeSensorBelt bumper;
 	CameraSensor camera;
 	LampActuator lamp;
@@ -22,11 +17,10 @@ public class Robot_bumper extends Agent {
         bumper = RobotFactory.addBumperBeltSensor(this, 10);
         lamp = RobotFactory.addLamp(this);
         setCanBeTraversed(false);
-       
-        
     }
     
     public void initBehavior() {
+    	super.initBehavior();
     	lamp.setOn(true);
     	lamp.setBlink(false);
     }
@@ -55,24 +49,11 @@ public class Robot_bumper extends Agent {
     }
     
     public void performBehavior() {
+    	super.performBehavior();
         if (collisionDetected()) {
         	bump();
-		//The robot rotates 180�
-        	rotateY(180);
-        	setTranslationalVelocity(velocity);         
-            	setRotationalVelocity(rotation);
-
         } else {
-        	
-        	
         	setColor(new Color3f(0,255,0));
-        	
-            // progress at 0.5 m/s
-            setTranslationalVelocity(velocity);
-            // frequently change orientation 
-            if ((getCounter() % 100)==0) 
-               setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
-            
         }
     }
 }
