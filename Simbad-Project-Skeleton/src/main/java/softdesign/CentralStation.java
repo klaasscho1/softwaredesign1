@@ -12,10 +12,6 @@ import javax.vecmath.Vector3d;
 
 public class CentralStation {
 	
-	Robot_cam camera;
-	Robot_bumper bumper;
-	Robot_picker picker;
-	
 	int numberOfRobots;
 	Point3d coords = new Point3d(0,0,0);
 	
