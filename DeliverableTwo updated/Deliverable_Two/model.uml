@@ -230,16 +230,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_vx1Z8EGiEemmos1wpWSOeg" name="CentralStation"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_yAXuEEGiEemmos1wpWSOeg" name="createCamera"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_zVtJUEGiEemmos1wpWSOeg" name="createBumper"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_0jXPQEGiEemmos1wpWSOeg" name="createPicker"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_DGRfEEGjEemmos1wpWSOeg" name="getNumberOfRobots">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_JLmzsEGlEemmos1wpWSOeg" name="numberOfRobots">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_Jqc9wEGjEemmos1wpWSOeg" name="getStatus"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_Ks_Y0EGjEemmos1wpWSOeg" name="initiallizeMIssion"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Ks_Y0EGjEemmos1wpWSOeg" name="initiallizeRobots"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wqdygENMEemVhZkmWJP7rg" name="ARobotFactory">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_8AMUoENMEemVhZkmWJP7rg" name="createRobot"/>

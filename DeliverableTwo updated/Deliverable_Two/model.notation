@@ -313,26 +313,6 @@
             <element xmi:type="uml:Operation" href="model.uml#_vx1Z8EGiEemmos1wpWSOeg"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_vyL_QUGiEemmos1wpWSOeg"/>
           </children>
-          <children xmi:type="notation:Shape" xmi:id="_yAtsUEGiEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
-            <element xmi:type="uml:Operation" href="model.uml#_yAXuEEGiEemmos1wpWSOeg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_yAtsUUGiEemmos1wpWSOeg"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_zV_dMEGiEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
-            <element xmi:type="uml:Operation" href="model.uml#_zVtJUEGiEemmos1wpWSOeg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_zV_dMUGiEemmos1wpWSOeg"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_0joVAEGiEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
-            <element xmi:type="uml:Operation" href="model.uml#_0jXPQEGiEemmos1wpWSOeg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_0jo8EEGiEemmos1wpWSOeg"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_DGik0EGjEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
-            <element xmi:type="uml:Operation" href="model.uml#_DGRfEEGjEemmos1wpWSOeg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_DGik0UGjEemmos1wpWSOeg"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_JqsOUEGjEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
-            <element xmi:type="uml:Operation" href="model.uml#_Jqc9wEGjEemmos1wpWSOeg"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_JqsOUUGjEemmos1wpWSOeg"/>
-          </children>
           <children xmi:type="notation:Shape" xmi:id="_KtTh4EGjEemmos1wpWSOeg" type="Operation_ClassOperationLabel">
             <element xmi:type="uml:Operation" href="model.uml#_Ks_Y0EGjEemmos1wpWSOeg"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_KtTh4UGjEemmos1wpWSOeg"/>
