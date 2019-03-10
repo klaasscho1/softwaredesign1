@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZYAWcEDMEem0oKCEpqBCSw" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="__yWYoEDQEemxjqtFBMVPtg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_uHl5MEDzEema0ugE7PJ60A">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bf_WoEDMEem0oKCEpqBCSw" name="ClassDiagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mdeX4EDMEem0oKCEpqBCSw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mde-8EDMEem0oKCEpqBCSw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_u6zwkEDMEem0oKCEpqBCSw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mdatgEDMEem0oKCEpqBCSw" name="ClassDiagrams">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_mdatgUDMEem0oKCEpqBCSw"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_mdatgkDMEem0oKCEpqBCSw"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mdatg0DMEem0oKCEpqBCSw" name="Package1" URI="">
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdathEDMEem0oKCEpqBCSw" name="Robot_Bumper">
+          <generalization xmi:type="uml:Generalization" xmi:id="_mdathUDMEem0oKCEpqBCSw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdathkDMEem0oKCEpqBCSw" name="Robot_Bumper">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdath0DMEem0oKCEpqBCSw" name="name"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdatiEDMEem0oKCEpqBCSw" name="position"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatiUDMEem0oKCEpqBCSw" name="initBehavior"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatikDMEem0oKCEpqBCSw" name="initBehavior"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdati0DMEem0oKCEpqBCSw" name="bump"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatjEDMEem0oKCEpqBCSw" name="performBehavior"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_mdatjUDMEem0oKCEpqBCSw" name="Class1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatjkDMEem0oKCEpqBCSw" name="Environment">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatj0DMEem0oKCEpqBCSw" name="World_size" isStatic="true">
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mdatkEDMEem0oKCEpqBCSw" value="25"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatkUDMEem0oKCEpqBCSw" name="Environment"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatkkDMEem0oKCEpqBCSw" name="Main">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatk0DMEem0oKCEpqBCSw" name="robot" aggregation="shared"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatlEDMEem0oKCEpqBCSw" name="environment"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatlUDMEem0oKCEpqBCSw" name="Main">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdatlkDMEem0oKCEpqBCSw" name="args"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatl0DMEem0oKCEpqBCSw" name="Robot_Picker">
+          <generalization xmi:type="uml:Generalization" xmi:id="_mdatmEDMEem0oKCEpqBCSw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatmUDMEem0oKCEpqBCSw" name="objectsLeft">
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mdatmkDMEem0oKCEpqBCSw" value="30"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatm0DMEem0oKCEpqBCSw" name="Robot_picker">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdatnEDMEem0oKCEpqBCSw" name="position"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdatnUDMEem0oKCEpqBCSw" name="name "/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatnkDMEem0oKCEpqBCSw" name="initBehavior()"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatn0DMEem0oKCEpqBCSw" name="performBehavior()"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatoEDMEem0oKCEpqBCSw" name="Robot">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatoUDMEem0oKCEpqBCSw" name="velocity"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatokDMEem0oKCEpqBCSw" name="rotation"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdato0DMEem0oKCEpqBCSw" name="storeTime"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatpEDMEem0oKCEpqBCSw" name="Robot"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatpUDMEem0oKCEpqBCSw" name="initBehavior"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatpkDMEem0oKCEpqBCSw" name="performBehavior"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatp0DMEem0oKCEpqBCSw" name="Coordinate">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatqEDMEem0oKCEpqBCSw" name="x"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatqUDMEem0oKCEpqBCSw" name="y"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatqkDMEem0oKCEpqBCSw" name="z"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatq0DMEem0oKCEpqBCSw" name="robot_bumper"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatrEDMEem0oKCEpqBCSw" name="robot_camera"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mdatrUDMEem0oKCEpqBCSw" name="robot_picker"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mdatrkDMEem0oKCEpqBCSw" name="Robot_Camera">
+          <generalization xmi:type="uml:Generalization" xmi:id="_mdatr0DMEem0oKCEpqBCSw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatsEDMEem0oKCEpqBCSw" name="initBehavior" concurrency="concurrent"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatsUDMEem0oKCEpqBCSw" name="performBehavior"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mdatskDMEem0oKCEpqBCSw" name="Robot_Camera">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdats0DMEem0oKCEpqBCSw" name="name"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdattEDMEem0oKCEpqBCSw" name="position"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mdattUDMEem0oKCEpqBCSw" memberEnd="_mdatuEDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdattkDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdatt0DMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mdatuEDMEem0oKCEpqBCSw" name="main" association="_mdattUDMEem0oKCEpqBCSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mdatuUDMEem0oKCEpqBCSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mdatukDMEem0oKCEpqBCSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mdatu0DMEem0oKCEpqBCSw" name="Creates environment" memberEnd="_mdatvkDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdatvEDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdatvUDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mdatvkDMEem0oKCEpqBCSw" name="main" association="_mdatu0DMEem0oKCEpqBCSw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mdatv0DMEem0oKCEpqBCSw" memberEnd="_mdatwkDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdatwEDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdatwUDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mdatwkDMEem0oKCEpqBCSw" name="coordinate" association="_mdatv0DMEem0oKCEpqBCSw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mdatw0DMEem0oKCEpqBCSw" memberEnd="_mdatxkDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdatxEDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdatxUDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mdatxkDMEem0oKCEpqBCSw" name="coordinate" association="_mdatw0DMEem0oKCEpqBCSw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mdatx0DMEem0oKCEpqBCSw" memberEnd="_mdatykDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdatyEDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdatyUDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mdatykDMEem0oKCEpqBCSw" name="coordinate" association="_mdatx0DMEem0oKCEpqBCSw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zvHa8EG6Eem9E5V9BMojqQ" memberEnd="_zvKeQEG6Eem9E5V9BMojqQ _zvRzAEG6Eem9E5V9BMojqQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zvJQIEG6Eem9E5V9BMojqQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zvJ3MEG6Eem9E5V9BMojqQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zvRzAEG6Eem9E5V9BMojqQ" name="main" type="_mdfmD0DMEem0oKCEpqBCSw" association="_zvHa8EG6Eem9E5V9BMojqQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AVx00ENNEemVhZkmWJP7rg" memberEnd="_AWj38ENNEemVhZkmWJP7rg _AWlGEENNEemVhZkmWJP7rg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AWfmgENNEemVhZkmWJP7rg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AWg0oENNEemVhZkmWJP7rg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AWlGEENNEemVhZkmWJP7rg" name="main" type="_mdfmD0DMEem0oKCEpqBCSw" association="_AVx00ENNEemVhZkmWJP7rg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7n7wMENNEemVhZkmWJP7rg" memberEnd="_7n8-UkNNEemVhZkmWJP7rg _7oAosENNEemVhZkmWJP7rg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7n8-UENNEemVhZkmWJP7rg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7n8-UUNNEemVhZkmWJP7rg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7oAosENNEemVhZkmWJP7rg" name="robot_picker" type="_mdfmFEDMEem0oKCEpqBCSw" association="_7n7wMENNEemVhZkmWJP7rg"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mdaty0DMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdatzEDMEem0oKCEpqBCSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mdfmAEDMEem0oKCEpqBCSw" name="Package1" visibility="private" URI="">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmAUDMEem0oKCEpqBCSw" name="Robot_Bumper">
+        <generalization xmi:type="uml:Generalization" xmi:id="_mdfmAkDMEem0oKCEpqBCSw" general="_mdfmHUDMEem0oKCEpqBCSw"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmA0DMEem0oKCEpqBCSw" name="Robot_Bumper">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmBEDMEem0oKCEpqBCSw" name="name" type="_mdj3cEDMEem0oKCEpqBCSw"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmBUDMEem0oKCEpqBCSw" name="position"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmBkDMEem0oKCEpqBCSw" name="initBehavior"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmB0DMEem0oKCEpqBCSw" name="initBehavior"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmCEDMEem0oKCEpqBCSw" name="bump"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmCUDMEem0oKCEpqBCSw" name="performBehavior"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mdfmCkDMEem0oKCEpqBCSw" name="Class1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmC0DMEem0oKCEpqBCSw" name="Environment">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmDEDMEem0oKCEpqBCSw" name="World_size" isStatic="true" type="_mdjQYEDMEem0oKCEpqBCSw">
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mdfmDUDMEem0oKCEpqBCSw" value="25"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmDkDMEem0oKCEpqBCSw" name="Environment"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmD0DMEem0oKCEpqBCSw" name="Main">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmEEDMEem0oKCEpqBCSw" name="robot" type="_mdfmHUDMEem0oKCEpqBCSw" aggregation="shared" association="_mdgNEEDMEem0oKCEpqBCSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VdCuIEG7Eem9E5V9BMojqQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VdYsYEG7Eem9E5V9BMojqQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmEUDMEem0oKCEpqBCSw" name="environment" type="_mdfmC0DMEem0oKCEpqBCSw" association="_mdg0IEDMEem0oKCEpqBCSw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zvKeQEG6Eem9E5V9BMojqQ" name="centralstation" type="_IzKl4EGiEemmos1wpWSOeg" aggregation="shared" association="_zvHa8EG6Eem9E5V9BMojqQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AWj38ENNEemVhZkmWJP7rg" name="arobotfactory" type="_wqdygENMEemVhZkmWJP7rg" association="_AVx00ENNEemVhZkmWJP7rg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmEkDMEem0oKCEpqBCSw" name="Main">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmE0DMEem0oKCEpqBCSw" name="args" type="_mdj3cEDMEem0oKCEpqBCSw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmFEDMEem0oKCEpqBCSw" name="Robot_Picker">
+        <generalization xmi:type="uml:Generalization" xmi:id="_mdfmFUDMEem0oKCEpqBCSw" general="_mdfmHUDMEem0oKCEpqBCSw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmFkDMEem0oKCEpqBCSw" name="objectsLeft" type="_mdjQYEDMEem0oKCEpqBCSw">
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mdfmF0DMEem0oKCEpqBCSw" value="30"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7n8-UkNNEemVhZkmWJP7rg" name="cherrymission" type="_FC9qsEGiEemmos1wpWSOeg" association="_7n7wMENNEemVhZkmWJP7rg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmGEDMEem0oKCEpqBCSw" name="Robot_picker">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmGUDMEem0oKCEpqBCSw" name="position"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmGkDMEem0oKCEpqBCSw" name="name " type="_mdj3cEDMEem0oKCEpqBCSw"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmG0DMEem0oKCEpqBCSw" name="initBehavior()"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmHEDMEem0oKCEpqBCSw" name="performBehavior()"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmHUDMEem0oKCEpqBCSw" name="Robot">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmHkDMEem0oKCEpqBCSw" name="velocity" type="_mdjQYkDMEem0oKCEpqBCSw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmH0DMEem0oKCEpqBCSw" name="rotation" type="_mdjQYkDMEem0oKCEpqBCSw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mdfmIEDMEem0oKCEpqBCSw" name="storeTime" type="_mdjQYkDMEem0oKCEpqBCSw"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmIUDMEem0oKCEpqBCSw" name="Robot"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmIkDMEem0oKCEpqBCSw" name="initBehavior"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmI0DMEem0oKCEpqBCSw" name="performBehavior"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mdfmK0DMEem0oKCEpqBCSw" name="Robot_Camera">
+        <generalization xmi:type="uml:Generalization" xmi:id="_mdfmLEDMEem0oKCEpqBCSw" general="_mdfmHUDMEem0oKCEpqBCSw"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmLUDMEem0oKCEpqBCSw" name="initBehavior" concurrency="concurrent"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmLkDMEem0oKCEpqBCSw" name="performBehavior"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mdfmL0DMEem0oKCEpqBCSw" name="Robot_Camera">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmMEDMEem0oKCEpqBCSw" name="name" type="_mdj3cEDMEem0oKCEpqBCSw"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mdfmMUDMEem0oKCEpqBCSw" name="position"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FC9qsEGiEemmos1wpWSOeg" name="CherryMission" visibility="protected">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_f83P4EGjEemmos1wpWSOeg" name="numberOfCherriesPicked" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gTQ9sEGjEemmos1wpWSOeg" name="numberOfCherriesGoal" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3V4kwEGjEemmos1wpWSOeg" name="CherryMIssion"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3rN7kEGjEemmos1wpWSOeg" name="setNumberOfCherries"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_4BlNIEGjEemmos1wpWSOeg" name="getNumberOfCherries">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_8Tpp0EGkEemmos1wpWSOeg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_4TUdYEGjEemmos1wpWSOeg" name="missionStatus">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_4eMbMEGkEemmos1wpWSOeg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IzKl4EGiEemmos1wpWSOeg" name="CentralStation">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pBNasEGiEemmos1wpWSOeg" name="numberOfRobots">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Ks_Y0EGjEemmos1wpWSOeg" name="initiallizeRobots"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wqdygENMEemVhZkmWJP7rg" name="ARobotFactory">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_8AMUoENMEemVhZkmWJP7rg" name="createRobot"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_J1zZkENNEemVhZkmWJP7rg" name="BumperRobotFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="_uiPsUENNEemVhZkmWJP7rg" general="_wqdygENMEemVhZkmWJP7rg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_QOh2MENNEemVhZkmWJP7rg" name="createRobot"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_T6fxoENNEemVhZkmWJP7rg" name="BumperRobotFactory">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_T6fxoUNNEemVhZkmWJP7rg" name="createRobot"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WWPbUENNEemVhZkmWJP7rg" name="CopyOf_BumperRobotFactory_1">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_WWPbUUNNEemVhZkmWJP7rg" name="createRobot"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_WWPbUkNNEemVhZkmWJP7rg" name="BumperRobotFactory">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_WWPbU0NNEemVhZkmWJP7rg" name="createRobot"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XSSz4ENNEemVhZkmWJP7rg" name="CameraRRobotFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="_v5Aq8ENNEemVhZkmWJP7rg" general="_wqdygENMEemVhZkmWJP7rg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ao48QENNEemVhZkmWJP7rg" name="createRobot"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dbdKgENNEemVhZkmWJP7rg" name="PickerRobotFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="_xVX7QENNEemVhZkmWJP7rg" general="_wqdygENMEemVhZkmWJP7rg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_i5Yy0ENNEemVhZkmWJP7rg" name="createRobot"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mdgNEEDMEem0oKCEpqBCSw" memberEnd="_mdfmEEDMEem0oKCEpqBCSw _mdgNE0DMEem0oKCEpqBCSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdgNEUDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdgNEkDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mdgNE0DMEem0oKCEpqBCSw" name="main" type="_mdfmD0DMEem0oKCEpqBCSw" association="_mdgNEEDMEem0oKCEpqBCSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mdgNFEDMEem0oKCEpqBCSw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mdgNFUDMEem0oKCEpqBCSw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mdg0IEDMEem0oKCEpqBCSw" name="Creates environment" memberEnd="_mdfmEUDMEem0oKCEpqBCSw _mdg0I0DMEem0oKCEpqBCSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdg0IUDMEem0oKCEpqBCSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdg0IkDMEem0oKCEpqBCSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mdg0I0DMEem0oKCEpqBCSw" name="main" type="_mdfmD0DMEem0oKCEpqBCSw" association="_mdg0IEDMEem0oKCEpqBCSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mdiCQEDMEem0oKCEpqBCSw" name="PrimitiveTypes" URI="http://www.omg.org/spec/PrimitiveTypes/20131001">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCQUDMEem0oKCEpqBCSw" name="Boolean">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mdiCQkDMEem0oKCEpqBCSw">
+          <body>Boolean is used for logical expressions, consisting of the predefined values true and false.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCQ0DMEem0oKCEpqBCSw" name="Integer">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mdiCREDMEem0oKCEpqBCSw">
+          <body>Integer is a primitive type representing integer values.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCRUDMEem0oKCEpqBCSw" name="Real">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mdiCRkDMEem0oKCEpqBCSw">
+          <body>Real is a primitive type representing the mathematical concept of real.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCR0DMEem0oKCEpqBCSw" name="String">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mdiCSEDMEem0oKCEpqBCSw">
+          <body>String is a sequence of characters in some suitable character set used to display information about the model. Character sets may include non-Roman alphabets and characters.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdiCSUDMEem0oKCEpqBCSw" name="UnlimitedNatural">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mdiCSkDMEem0oKCEpqBCSw">
+          <body>UnlimitedNatural is a primitive type representing unlimited natural values.</body>
+        </ownedComment>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mdiCS0DMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdiCTEDMEem0oKCEpqBCSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+          <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+          <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+          <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mdiCTUDMEem0oKCEpqBCSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdiCTkDMEem0oKCEpqBCSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdipUEDMEem0oKCEpqBCSw" name="Boolean">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mdipUUDMEem0oKCEpqBCSw" annotatedElement="_mdipUEDMEem0oKCEpqBCSw">
+        <body>Boolean is used for logical expressions, consisting of the predefined values true and false.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdjQYEDMEem0oKCEpqBCSw" name="Integer">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mdjQYUDMEem0oKCEpqBCSw" annotatedElement="_mdjQYEDMEem0oKCEpqBCSw">
+        <body>Integer is a primitive type representing integer values.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdjQYkDMEem0oKCEpqBCSw" name="Real">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mdjQY0DMEem0oKCEpqBCSw" annotatedElement="_mdjQYkDMEem0oKCEpqBCSw">
+        <body>Real is a primitive type representing the mathematical concept of real.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdj3cEDMEem0oKCEpqBCSw" name="String">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mdj3cUDMEem0oKCEpqBCSw" annotatedElement="_mdj3cEDMEem0oKCEpqBCSw">
+        <body>String is a sequence of characters in some suitable character set used to display information about the model. Character sets may include non-Roman alphabets and characters.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_mdj3ckDMEem0oKCEpqBCSw" name="UnlimitedNatural">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mdj3c0DMEem0oKCEpqBCSw" annotatedElement="_mdj3ckDMEem0oKCEpqBCSw">
+        <body>UnlimitedNatural is a primitive type representing unlimited natural values.</body>
+      </ownedComment>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
