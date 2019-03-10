@@ -229,7 +229,6 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_pBNasEGiEemmos1wpWSOeg" name="numberOfRobots">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_vx1Z8EGiEemmos1wpWSOeg" name="CentralStation"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_Ks_Y0EGjEemmos1wpWSOeg" name="initiallizeRobots"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wqdygENMEemVhZkmWJP7rg" name="ARobotFactory">
