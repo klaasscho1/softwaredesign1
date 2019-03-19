@@ -2,6 +2,7 @@ package RootElement.ClassDiagram.Package1;
 import javax.vecmath.Vector3d;
 import  simbad.sim.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -62,5 +63,20 @@ public class CentralStation {
 	        double z = (Math.random()*20 - 10);
 	        environment.add(new CherryAgent(new Vector3d(x, 0, z), "cherry", 0.3f));
 	    }
+	}
+	
+	// Called in case of emergencies. Aborts mission.
+	public void abort() {
+		System.out.println("Central: Aborting mission.");
+		
+		List<Robot> robots = new ArrayList<Robot>();
+		
+		robots.add(camera);
+		robots.add(bumper);
+		// robots.add(picker); TODO: Make picker implement Robot
+		
+		for (Robot robot : robots) {
+			robot.abort();
+		}
 	}
 }

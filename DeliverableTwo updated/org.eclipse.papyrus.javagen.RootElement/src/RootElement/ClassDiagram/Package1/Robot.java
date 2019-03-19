@@ -13,11 +13,12 @@ import javax.vecmath.Vector3d;
 import  simbad.sim.*;
 
 public class Robot extends Agent {
-	
 	private double velocity = 0.5;
+	private Vector3d origin;
 	
 	public Robot (Vector3d position, String name) {     
         super(position,name);
+        origin = position;
     }
 
 	public void initBehavior() {
@@ -46,5 +47,15 @@ public class Robot extends Agent {
                setRotationalVelocity(Math.PI/2 * (0.5 - Math.random()));
         }
 
+	}
+	
+	// Prompt to abort mission when an emergency occurs
+	public void abort() {
+		System.out.println("Robot: Aborting mission.");
+		
+		// Move back to starting position and stop moving.
+        moveToStartPosition();
+        setTranslationalVelocity(0.0);
+        setRotationalVelocity(0);
 	}
 };
