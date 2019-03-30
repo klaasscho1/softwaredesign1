@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_AsAioFLnEemUZZT_zLkk_w" name="RootElement">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_AsPzMFLnEemUZZT_zLkk_w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_AsQaQFLnEemUZZT_zLkk_w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_HoM4sFLnEemUZZT_zLkk_w" name="missionStatus()" source="_DhFSUFLnEemUZZT_zLkk_w" target="_FhjVQFLnEemUZZT_zLkk_w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dCM8IFLnEemUZZT_zLkk_w" source="_WMzKkFLnEemUZZT_zLkk_w" target="_cNVwsFLnEemUZZT_zLkk_w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_d_qC4FLnEemUZZT_zLkk_w" source="_FhjVQFLnEemUZZT_zLkk_w" target="_WMzKkFLnEemUZZT_zLkk_w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eybjoFLnEemUZZT_zLkk_w" source="_FhjVQFLnEemUZZT_zLkk_w" target="_WfeO8FLnEemUZZT_zLkk_w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fwyCQFLnEemUZZT_zLkk_w" source="_FhjVQFLnEemUZZT_zLkk_w" target="_WzfXIFLnEemUZZT_zLkk_w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_DhFSUFLnEemUZZT_zLkk_w" name="Initial1"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_FhjVQFLnEemUZZT_zLkk_w" name="Choice1" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WMzKkFLnEemUZZT_zLkk_w" name="Mission not complete">
+        <doActivity xmi:type="uml:Activity" xmi:id="_uPg8sFLnEemUZZT_zLkk_w" name="return false"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_WfeO8FLnEemUZZT_zLkk_w" name="Mission complete">
+        <doActivity xmi:type="uml:Activity" xmi:id="_sX1CUFLnEemUZZT_zLkk_w" name="return true"/>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_WzfXIFLnEemUZZT_zLkk_w" name="Mission not set">
+        <doActivity xmi:type="uml:Activity" xmi:id="_zMcwwFLnEemUZZT_zLkk_w" name="return false"/>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_cNVwsFLnEemUZZT_zLkk_w" name="FinalState1"/>
+    </region>
+  </packagedElement>
+</uml:Model>

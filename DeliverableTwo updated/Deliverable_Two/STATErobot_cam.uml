@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_US6OkFLYEemUZZT_zLkk_w" name="RootElement">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_UTzmcFLYEemUZZT_zLkk_w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_UT3Q0FLYEemUZZT_zLkk_w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_0htb4FLZEemUZZT_zLkk_w" source="_WyDKgFLYEemUZZT_zLkk_w" target="_UITroFLZEemUZZT_zLkk_w">
+        <effect xmi:type="uml:Activity" xmi:id="_RSB64FMBEemUZZT_zLkk_w" name="Equip robot with camera"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_8Nat4FLaEemUZZT_zLkk_w" guard="_PlR6cFLbEemUZZT_zLkk_w" source="_UITroFLZEemUZZT_zLkk_w" target="_1Hel8FLaEemUZZT_zLkk_w">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_PlR6cFLbEemUZZT_zLkk_w">
+          <specification xmi:type="uml:LiteralBoolean" xmi:id="_PlR6cVLbEemUZZT_zLkk_w" value="true"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_C37eEFLbEemUZZT_zLkk_w" event="_CfbegFLbEemUZZT_zLkk_w"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_T9GPQFLbEemUZZT_zLkk_w" source="_1Hel8FLaEemUZZT_zLkk_w" target="_UITroFLZEemUZZT_zLkk_w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_jfaGkFLbEemUZZT_zLkk_w" guard="_ntROIFLbEemUZZT_zLkk_w" source="_UITroFLZEemUZZT_zLkk_w" target="_XSs5IFLbEemUZZT_zLkk_w">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_ntROIFLbEemUZZT_zLkk_w">
+          <specification xmi:type="uml:LiteralBoolean" xmi:id="_ntROIVLbEemUZZT_zLkk_w" value="true"/>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_ljrrcFLbEemUZZT_zLkk_w" name="Stop button" event="_q106gFLbEemUZZT_zLkk_w"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_gy-1MFLeEemUZZT_zLkk_w" source="_XSs5IFLbEemUZZT_zLkk_w" target="_endY0FLeEemUZZT_zLkk_w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_WyDKgFLYEemUZZT_zLkk_w" name="Start"/>
+      <subvertex xmi:type="uml:State" xmi:id="_UITroFLZEemUZZT_zLkk_w" name="Running">
+        <doActivity xmi:type="uml:Activity" xmi:id="_ZTeq0FLrEemUZZT_zLkk_w" name="Move and take photos" node="_1LmoQFLrEemUZZT_zLkk_w">
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_1LmoQFLrEemUZZT_zLkk_w" name="CallBehaviorAction1"/>
+        </doActivity>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_1Hel8FLaEemUZZT_zLkk_w" name="Collision">
+        <doActivity xmi:type="uml:Activity" xmi:id="_6MD6IFLaEemUZZT_zLkk_w" name="Turn" node="_oK0QUFLcEemUZZT_zLkk_w">
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_oK0QUFLcEemUZZT_zLkk_w" name="CallBehaviorAction1"/>
+        </doActivity>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_XSs5IFLbEemUZZT_zLkk_w" name="Emergency Stop">
+        <doActivity xmi:type="uml:Activity" xmi:id="_iOFBkFLbEemUZZT_zLkk_w" name="Go back to start position and set velocity = 0"/>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_endY0FLeEemUZZT_zLkk_w" name="FinalState1"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_xP53cFLaEemUZZT_zLkk_w" name="Start button pressed"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CfbegFLbEemUZZT_zLkk_w" name="collisionDetected() "/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_q106gFLbEemUZZT_zLkk_w" name="Stop button"/>
+</uml:Model>

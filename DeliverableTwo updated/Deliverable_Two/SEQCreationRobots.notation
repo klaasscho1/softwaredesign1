@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_e9D-QFGSEemUZZT_zLkk_w" type="PapyrusUMLSequenceDiagram" name="Sequence Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_e9D-QVGSEemUZZT_zLkk_w" type="Interaction_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_e9D-QlGSEemUZZT_zLkk_w" type="Interaction_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_e9D-Q1GSEemUZZT_zLkk_w" type="Interaction_SubfragmentCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_qeNGMFGSEemUZZT_zLkk_w" type="CombinedFragment_Shape">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_qePicFGSEemUZZT_zLkk_w" type="CombinedFragment_SubfragmentCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_qeQJgFGSEemUZZT_zLkk_w" type="InteractionOperand_Shape">
+            <children xmi:type="notation:DecorationNode" xmi:id="_qeRXoFGSEemUZZT_zLkk_w" type="InteractionOperand_Guard">
+              <element xmi:type="uml:InteractionConstraint" href="SEQCreationRobots.uml#_qd9OkFGSEemUZZT_zLkk_w"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qeRXoVGSEemUZZT_zLkk_w" x="5" y="5"/>
+            </children>
+            <element xmi:type="uml:InteractionOperand" href="SEQCreationRobots.uml#_qdvMIFGSEemUZZT_zLkk_w"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qeQJgVGSEemUZZT_zLkk_w" width="498" height="203"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_qePicVGSEemUZZT_zLkk_w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_qePiclGSEemUZZT_zLkk_w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qePic1GSEemUZZT_zLkk_w"/>
+        </children>
+        <element xmi:type="uml:CombinedFragment" href="SEQCreationRobots.uml#_qdf7kFGSEemUZZT_zLkk_w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qeNGMVGSEemUZZT_zLkk_w" x="256" y="99" width="441" height="198"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_wVPyEFGSEemUZZT_zLkk_w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_wVRnQFGSEemUZZT_zLkk_w" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="SEQCreationRobots.uml#_wU_6cFGSEemUZZT_zLkk_w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wVPyEVGSEemUZZT_zLkk_w" x="315" y="10" width="100" height="743"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_y0jGEFGSEemUZZT_zLkk_w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_y0kUMFGSEemUZZT_zLkk_w" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="SEQCreationRobots.uml#_y0KEgFGSEemUZZT_zLkk_w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y0jGEVGSEemUZZT_zLkk_w" x="463" y="10" width="100" height="743"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_zksJkFGSEemUZZT_zLkk_w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_zkul0FGSEemUZZT_zLkk_w" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="SEQCreationRobots.uml#_zkWLUFGSEemUZZT_zLkk_w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zksJkVGSEemUZZT_zLkk_w" x="597" y="10" width="100" height="743"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e9D-RFGSEemUZZT_zLkk_w"/>
+    </children>
+    <element xmi:type="uml:Interaction" href="SEQCreationRobots.uml#_e7gfEFGSEemUZZT_zLkk_w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e9D-RVGSEemUZZT_zLkk_w"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_e9D-RlGSEemUZZT_zLkk_w" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_e9D-R1GSEemUZZT_zLkk_w"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_e9D-SFGSEemUZZT_zLkk_w">
+    <owner xmi:type="uml:Model" href="SEQCreationRobots.uml#_e0c00FGSEemUZZT_zLkk_w"/>
+  </styles>
+  <element xmi:type="uml:Interaction" href="SEQCreationRobots.uml#_e7gfEFGSEemUZZT_zLkk_w"/>
+  <edges xmi:type="notation:Connector" xmi:id="_9cCHEFIfEemUZZT_zLkk_w" type="Message_AsynchEdge" source="_wVPyEFGSEemUZZT_zLkk_w" target="_y0jGEFGSEemUZZT_zLkk_w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9cDVMFIfEemUZZT_zLkk_w" type="Message_AsynchNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9cD8QFIfEemUZZT_zLkk_w" x="1" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9cD8QVIfEemUZZT_zLkk_w" type="Message_AsynchStereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9cD8QlIfEemUZZT_zLkk_w" x="1" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9cCHEVIfEemUZZT_zLkk_w"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_9cEjUFIfEemUZZT_zLkk_w"/>
+    <element xmi:type="uml:Message" href="SEQCreationRobots.uml#_9bD2sFIfEemUZZT_zLkk_w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9cCHElIfEemUZZT_zLkk_w" points="[0, 3, -184, 1]$[184, 3, 0, 1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9eSw4FIfEemUZZT_zLkk_w" id="(1.0,0.143471562850758)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9eTX8FIfEemUZZT_zLkk_w" id="(0.0,0.14628473074979245){L}"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-uf0gFIfEemUZZT_zLkk_w" type="Message_AsynchEdge" source="_wVPyEFGSEemUZZT_zLkk_w" target="_zksJkFGSEemUZZT_zLkk_w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-ugbkFIfEemUZZT_zLkk_w" type="Message_AsynchNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-uhCoFIfEemUZZT_zLkk_w" x="1" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-uhCoVIfEemUZZT_zLkk_w" type="Message_AsynchStereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-uhColIfEemUZZT_zLkk_w" x="1" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-uf0gVIfEemUZZT_zLkk_w"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_-uhpsFIfEemUZZT_zLkk_w"/>
+    <element xmi:type="uml:Message" href="SEQCreationRobots.uml#_-t3iYFIfEemUZZT_zLkk_w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-uf0glIfEemUZZT_zLkk_w" points="[1, 5, -351, 1]$[352, -235, 0, -239]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-wR9MFIfEemUZZT_zLkk_w" id="(0.0,0.2644355800036024)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-wR9MVIfEemUZZT_zLkk_w" id="(0.0,0.2686552967057876){L}"/>
+  </edges>
+</notation:Diagram>
