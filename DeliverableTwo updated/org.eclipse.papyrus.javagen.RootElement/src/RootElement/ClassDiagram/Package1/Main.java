@@ -4,9 +4,13 @@
 
 package RootElement.ClassDiagram.Package1;
 
+import java.awt.Container;
+import java.awt.KeyEventDispatcher;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import javax.swing.JDesktopPane;
 import javax.vecmath.Vector3d;
 import simbad.gui.Simbad;
 import simbad.sim.EnvironmentDescription;
@@ -36,22 +40,14 @@ public class Main {
       	frame.update(frame.getGraphics());
       	
 		// Listen for emergency key press
-      	
-      	frame.setFocusable(true);
-      	frame.addKeyListener(new KeyListener() {
-            @Override
-            public void keyTyped(KeyEvent e) {}
-
-            @Override
-            public void keyPressed(KeyEvent e) {
-            	// If the pressed key is the emergency key, tell central station to abort.
-                if(e.getKeyCode() == emergencyKeyCode) {
-                	central.abort();
+      	KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyEventDispatcher() {
+            public boolean dispatchKeyEvent(KeyEvent e) {
+                if (e.getKeyCode() == emergencyKeyCode) {
+                    central.abort();
+                    e.consume();
                 }
+                return false;
             }
-
-            @Override
-            public void keyReleased(KeyEvent e) {}
         });
 	}
 };
